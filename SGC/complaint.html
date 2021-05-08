@@ -1,0 +1,155 @@
+<html>
+<head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/complaintcss.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  
+   
+</head>
+<body> 
+    <header class="text-gray-600 body-font head">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">Student Grievances</span>
+        </a>
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+          <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+          <a class="mr-5 hover:text-gray-900" href="admin.html">Admin Login</a>
+          <a class="mr-5 hover:text-gray-900" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+
+
+
+    <div class="main">
+    <form method="get" action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off" role="main">
+      <br>
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-lg mb-3" style="font-size: 5vh;">We are here to assist you!</h1>
+   <br>
+      <p style="color: grey; font-weight: 500;">Please complete the form below for your complaints.</p>
+      <hr>
+      <br>
+      <br>
+      <br>
+      <div class="w-full md:w-1/2 px-3" style="margin-left: 0px;">
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: large;">Date of complaint</h1>
+      <input id="today" type="date" style="width: fit-content;border: 1px;border-color: black;">
+    </div>
+      <br>
+      <br>
+      <br>
+      <div class="w-full md:w-1/2 px-3" style="margin-left: 0px;">
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: large;">Complaint's Name</h1>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="Complaint's Name">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="w-full md:w-1/2 px-3 relative" style="margin-left: 0px;">
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: large;">Institute</h1>
+      <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+        <option>NIT JAMSHEDPUR</option>
+        <option>NIT PATNA</option>
+        <option>IIT KHARAGPUR</option>
+      </select>
+      <div class="pointer-events-none absolute inset-y-0 right-2 top-8 flex items-center px-2 text-gray-700" style="vertical-align: middle;">
+        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="w-full md:w-1/2 px-3" style="margin-left: 0px;">
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: large;">Batch</h1>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="w-full md:w-1/2 px-3" style="margin-left: 0px;">
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: large;">Branch</h1>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="w-full md:w-1/2 px-3" style="margin-left: 0px;">
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: large;">The nature of complaint:</h1>
+      <textarea class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"></textarea>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="w-full md:w-1/2 px-3" style="margin-left: 0px;">
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: large;">Name of the person against which/whom the complaint is filed:</h1>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="w-full md:w-1/2 px-3" style="margin-left: 0px;">
+      <h1 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: large;">The specific details of the complaint:</h1>
+      <textarea class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"></textarea>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+      Submit
+    </button>
+    <div class="w-full md:w-1/2 px-3" style="margin-left: 0px;">  
+  </form>
+
+  </div>
+  <footer class="text-gray-600 body-font" style="position: absolute; bottom: 0;width: 100%;">
+        
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Team Code Breakers —
+          
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path dnone" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let today = new Date().toISOString().substr(0, 10);
+document.querySelector("#today").value = today;
+
+document.querySelector("#today2").valueAsDate = new Date();
+    </script>
+    </body>
+    </html>
